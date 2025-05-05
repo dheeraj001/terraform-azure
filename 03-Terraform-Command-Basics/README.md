@@ -13,4 +13,4 @@
 
 ![TerraFormWorkFlow](./terraform-manifests/Terrafrom-WorkFlow.png)
 
-![TFWorkFlowDetails](./terraform-manifests/Tf-Workflow-Details.png)
+![TFWorkFlowDetails](./terraform-manifests/Tf-WorkflowDetails.png)
