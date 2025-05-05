@@ -9,3 +9,9 @@
 - Understand Identifiers
 - Understand Comments
 
+![tfimageflow](./image/imageflow.png)
+
+![tfimagebasics1](./image/tfimagebasics1.png)
+
+![tfimagebasics2](./image/tfimagebasics2.png)
+
