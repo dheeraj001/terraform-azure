@@ -15,3 +15,8 @@
 
 ![tfimagebasics2](./image/tfimagebasics2.png)
 
+# Step-03: Understand about Arguments, Attributes and Meta-Arguments.
+
+- Arguments can be required or optional(input we provide in BLOCK)
+- Attribues format looks like resource_type.resource_name.attribute_name(Output recive  after Resouce Create)
+- Meta-Arguments change a resource type's behavior (Example: count, for_each)
