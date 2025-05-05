@@ -11,5 +11,5 @@
   4. terraform apply
   5. terraform destroy
 
+![TerraFormWorkFlow](./terraform-manifests/Terrafrom-WorkFlow.png)
 
-  
