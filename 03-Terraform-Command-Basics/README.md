@@ -19,13 +19,14 @@
 
 - **Pre-Conditions-1:** Get Azure Regions and decide the region where you want to create resources
 
-<pre>
+```bash
 # Get Azure Regions
 az account list-locations -o table
 </pre>
+```
 
 - **Pre-Conditions-2:** If not done earlier, complete `az login` via Azure CLI. We are going to use Azure CLI Authentication for Terraform when we use Terraform Commands.
-<pre>
+```bash
 # Azure CLI Login
  az login
 
@@ -34,11 +35,11 @@ az account list-locations -o table
 
 # Set Specific Subscription (if we have multiple subscriptions)
  az account set --subscription="SUBSCRIPTION_ID"
-</pre>
+```
 
 # Step-03: Terraform Core Commands
 
-<pre>
+```bash
 # Terraform Initialize
 terraform init
 
@@ -50,7 +51,7 @@ terraform plan
 
 # Terraform Apply to Create Resources
 terraform apply 
-</pre>
+```
 
 # Step-04: Verify Azure Resource Group in Azure Management Console
 
@@ -60,15 +61,17 @@ terraform apply
 
 # Step-05: Destroy Infrastructure
 
-<pre>
+```bash
 # Destroy Azure Resource Group 
 terraform destroy
 Observation:
 1. Verify if the resource group got deleted in Azure Management Console
 2. Verify terraform.tfstate file and resource group info should be removed
 3. Verify terraform.tfstate.backup, it should have the resource group info here stored as backup. 
+```
 
 # Delete Terraform files 
+```bash
 rm -rf .terraform*
 rm -rf terraform.tfstate*
-</pre>
+```
