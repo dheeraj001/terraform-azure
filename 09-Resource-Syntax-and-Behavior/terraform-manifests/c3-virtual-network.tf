@@ -9,12 +9,6 @@ resource "azurerm_virtual_network" "myvet" {
     }    
 }
 
-resource "azurerm_subnet" "mysubnet" {
-    name = "mysubnet-01"
-    resource_group_name = azurerm_resource_group.myrg.name
-    virtual_network_name = azurerm_virtual_network.myvet.name
-    address_prefixes = ["10.0.2.0/24"]
-}
 
 resource "azurerm_public_ip" "mypublicip" {
     name = "mypublicip-01"
