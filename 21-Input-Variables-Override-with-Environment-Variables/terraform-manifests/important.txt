@@ -1,0 +1,5 @@
+582  export TF_VAR_resource_group_name=rgenv
+  583  export TF_VAR_resource_group_location=westus2
+  584  export TF_VAR_virtual_network_name=vnetenv
+  585  export TF_VAR_virtual_subnet=subnetenv
+  586  echo $TF_VAR_resoure_group_name, $TF_VAR_resoure_group_location, $TF_VAR_virtual_network_name, $TF_VAR_subnet_name
