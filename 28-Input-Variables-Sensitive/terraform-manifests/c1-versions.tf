@@ -1,17 +1,25 @@
-# Terraform Block
 terraform {
-  required_version = ">= 1.0.0"
+  required_version = ">= 1.11.4"
   required_providers {
     azurerm = {
-      source = "hashicorp/azurerm"
-      version = ">= 2.0" 
+      source  = "hashicorp/azurerm"
+      version = ">= 1.11.4"
+    }
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.7.2"
     }
   }
 }
 
-# Provider Block
 provider "azurerm" {
- features {}          
+  features {}
+  subscription_id = "08607c6d-1d61-4140-a717-47cad9c37fc8"
 }
 
+resource "random_string" "mystring" {
+  length  = 10
+  upper   = false
+  special = false
 
+}
