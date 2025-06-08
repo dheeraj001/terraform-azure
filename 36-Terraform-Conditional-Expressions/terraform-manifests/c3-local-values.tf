@@ -8,5 +8,5 @@ locals {
     Service = local.service_name
     Owner   = local.owner
   }
-  vnet_address_space = (var.environment == "dev" ? var.virtual_address_space_dev : var.virtual_address_space_all )
+  vnet_address_space = (var.environment == "dev" ? var.virtual_address_space_dev : var.virtual_address_space_all)
 }

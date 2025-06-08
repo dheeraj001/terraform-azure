@@ -10,7 +10,8 @@ variable "business_unit" {
 variable "environment" {
   description = "Environment Name"
   type        = string
-  default     = "dev"
+  # default     = "dev"
+   default = "qa"
 }
 # 3. Resource Group Name
 variable "resoure_group_name" {
@@ -33,16 +34,16 @@ variable "virtual_network_name" {
 
 variable "virtual_address_space_dev" {
   description = "Virtual Network Address for Dev"
-  type = list(string)
-  default = [ "10.0.0.0/16" ]
-  
+  type        = list(string)
+  default     = ["10.0.0.0/16"]
+
 }
 
 variable "virtual_address_space_all" {
   description = "Virtual NetWork Address Space for All the enviorment except dev"
-  type = list(string)
-  default = [ "10.1.0.0./16", "10.2.0.0/16", "10.3.0.0" ]  
-  
+  type        = list(string)
+  default     = ["10.1.0.0./16", "10.2.0.0/16", "10.3.0.0"]
+
 }
 
 
